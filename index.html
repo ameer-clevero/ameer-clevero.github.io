@@ -1,22 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <style>
-        a {
-            display: block;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div>
-        <a href="https://ameer-clevero.github.io/onam_staticphone/">Onam Offer Staticphone</a>
-        <a href="https://ameer-clevero.github.io/resume">Resume</a>
-        <a href="https://ameer-clevero.github.io/resume/modern/"> Resume Modern</a>
-        <a href="https://ameer-clevero.github.io/smart-health-mon/"> Smartwatch</a>
-        <a href="https://ameer-clevero.github.io/ShellVault/"> Shell Vault </a>
-        <a href="https://ameer-clevero.github.io/ems_clone_tailwind/"> Clone of Clevero EMS landing page using Tailwind CSS FW </a>
-    </div>
+    <script>
+        elem = () => {
+            let count = 105;
+            if (screen.width < 800) {
+                count = 10;
+            }
+            for (let i = 0; i < count; i++) {
+                let iDiv = document.createElement('img');
+                iDiv.id = i;
+                if (i % 2 == 0) {
+                    iDiv.className = "evenClass";
+                } else {
+                    iDiv.className = "oddClass";
+                }
+                if (i % 4 == 0) {
+                    iDiv.className = "TDClass";
+                }
+                if (i % 7 == 0) {
+                    iDiv.className = "CircClass";
+                }
+                iDiv.src = '../assets/avatar.jpg';
+                document.getElementsByTagName('body')[0].appendChild(iDiv);
+            };
+        }
+        elem();
+    </script>
 </body>
 
 </html>
