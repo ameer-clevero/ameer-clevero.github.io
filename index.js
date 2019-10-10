@@ -21,3 +21,4 @@
                 document.getElementsByTagName('body')[0].appendChild(iDiv);
             };
         }
+      elem();
